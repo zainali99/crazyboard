@@ -1,0 +1,27 @@
+/*CRAZYBOARD FILES (C) ZAIN ALI 2018*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {margin:0;padding: 0;}
+body {color:#333;font-family: 'Open Sans', sans-serif;}
+a{text-decoration:none;}
+
+
+nav ul li {display: inline-block;line-height: 60px;background:#EEE;border-radius: 10px;border-bottom: 4px solid #DDD;}
+nav ul li a {font-size:16px;display: block;color:#666;text-transform: lowercase;padding: 0 5px;}
+nav ul {height: 60px;}
+nav ul li:hover {background: #fff;}
+
+nav ul li.active {
+	font-weight: bold;
+    background: #ddd;
+    border-bottom-color:  #CCC;
+}
+.board {max-width: 90%;width: 960px;margin:60px auto;}
+.header {border-radius:5px;margin:30px auto;background: #000;height: 300px;background: url("/img/cover.jpeg");background-size: cover;background-position: center;}
+.main {
+    border-top: 3px solid;
+    margin: 30px auto;
+    font-size: 11px;
+    border-radius: 10px;
+    padding: 10px;
+}
