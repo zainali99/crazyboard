@@ -16,12 +16,78 @@ nav ul li.active {
     background: #ddd;
     border-bottom-color:  #CCC;
 }
+nav#menu {
+    padding-bottom: 50px;
+}
+ul li {list-style: none}
 .board {max-width: 90%;width: 960px;margin:60px auto;}
 .header {border-radius:5px;margin:30px auto;background: #000;height: 300px;background: url("/img/cover.jpeg");background-size: cover;background-position: center;}
 .main {
     border-top: 3px solid;
-    margin: 30px auto;
+    margin: 30px auto;max-width: 100%;
     font-size: 11px;
     border-radius: 10px;
     padding: 10px;
+}.userinput {
+    display: block;
+    outline: none;
+    width: 300px;max-width: 100%;
+    padding: 5px;
+    border: 2px solid #222;
+}
+
+.userinput[name=a] {
+    border-bottom: 0;
+}
+
+.userinput[name=b] {
+    border-top: 2px solid #444;
+    resize: vertical;
+}
+
+.tagboard ul li {
+    word-break:  break-word;
+    padding: 10px;
+    font-size: 14px;
+    background: #c1c9d6;
+    border-radius: 10px;
+    margin: 5px auto;
+}
+.tagboard .user {font-weight: bold;}
+.tagboard ul {
+    height: 300px;
+    overflow-y: scroll;
+}.btn {
+    background: linear-gradient(#757a84,#3e464c);
+    cursor: pointer;
+    color: #52c7f3;
+    font-weight: bold;
+    font-size: 34px;
+    text-shadow: 0 2px 0 #00a1ff, 0 3px 0 #000;
+}.tagboard {
+    background: linear-gradient(#5f9bc7,#485056);
+    border-radius: 10px;
+    padding: 10px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10px;
+    background: #333;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e6a974;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b35f00; 
 }
